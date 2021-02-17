@@ -5,7 +5,7 @@ const tableData = data;
 var tbody = d3.select("tbody"); // declare variable tbody, use d3.select to tell JavaScript to look for <tbody> tags in the HTML
 
 // Simple JavaScript console.log statement
-function printHello(); {
+function printHello() {
     console.log("Hello there!");
 }
 
@@ -13,7 +13,7 @@ function buildTable(data) {
     tbody.html(""); // Clear the data
     //Next, loop throgh each object in the data
     // and append a row and cells for each alue in the row
-    data.array.forEach((dataRow) => {
+    data.forEach((dataRow) => {
         // Append a row to the table body
         let row = tbody.append("tr");
         // Loop through each field in the dataRow and
